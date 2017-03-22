@@ -11,10 +11,11 @@ public class Main {
 		for (int i = 0; i < 3; i++)
 			array[i] = s.nextInt();
 		s.close();
-		
+
 		Arrays.sort(array);
-		
-		for (int i = 0; i < array.length;i ++)
-				System.out.print(array[i] + ((i == array.length -1) ? "": "->"));
+
+		for (int i = 0; i < array.length; i++)
+			System.out.print(array[i] + ((i == array.length - 1) ? "" : "->"));
 	}
+
 }

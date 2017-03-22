@@ -18,4 +18,5 @@ public class Main {
 				System.out.printf(array[Character.digit(str.charAt(i), 10)] + ((i != str.length() - 1) ? " " : ""));
 		}
 	}
+
 }

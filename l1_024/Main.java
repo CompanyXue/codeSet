@@ -1,4 +1,4 @@
-package l1_004;
+package l1_024;
 
 import java.util.Scanner;
 
@@ -6,11 +6,10 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-		int F = s.nextInt();
-		int C = 5 * (F - 32) / 9;
+		int d = s.nextInt();
 		s.close();
 
-		System.out.printf("Celsius = %d\n", C);
+		System.out.printf("%d", d == 5 ? 7 : (d + 2) % 7);
 	}
 
 }

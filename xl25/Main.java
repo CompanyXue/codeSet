@@ -7,8 +7,7 @@ public class Main {
 		String A = s.next();
 		String B = s.next();
 		s.close();
-		
-		
+				
 		System.out.printf("%d +%d = %d",A,B,A+B);
 	}
 

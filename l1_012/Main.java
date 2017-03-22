@@ -8,6 +8,8 @@ public class Main {
 		Scanner s = new Scanner(System.in);
 		int n = s.nextInt();
 		s.close();
+
 		System.out.printf("2^%d = %d", n, (int) Math.pow(2, n));
 	}
+
 }
