@@ -1,3 +1,5 @@
+package l2_017;
+
 import java.util.Scanner;
 import java.util.Arrays;
 

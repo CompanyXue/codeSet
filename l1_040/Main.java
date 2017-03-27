@@ -1,3 +1,5 @@
+package l1_040;
+
 import java.util.Scanner;  
 
 public class Main{

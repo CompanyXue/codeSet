@@ -1,3 +1,5 @@
+package xl28;
+
 import java.util.Scanner;  
    
 public class Main {  
@@ -6,6 +8,7 @@ public class Main {
   
         Scanner scan = new Scanner(System.in); 
 		int n = scan.nextInt();
+		scan.close();
         int num[] = new int[n];
         
         for(int i = 0;i < n;i++){

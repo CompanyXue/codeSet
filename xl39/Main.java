@@ -1,3 +1,5 @@
+package xl39;
+
 import java.util.Scanner;
 
 public class Main{
