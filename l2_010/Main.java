@@ -23,6 +23,7 @@ public class Main {
 				keyRight[i] = s.nextInt();
 			}
 			
+			s.close();
 		}
 
 }

@@ -16,6 +16,8 @@ public class Main{
 			array[i] = s.nextInt();
 			sum += array[i];
 		}
+		s.close();
+		
 		Arrays.sort(array);
 		
 		for(int i = 0; i < n / 2; i++)
