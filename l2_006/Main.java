@@ -77,8 +77,7 @@ public class Main {
 			if (node.leftChild != null)
 				queue.offer(node.leftChild);
 			if (node.rightChild != null)
-				queue.offer(
-						node.rightChild);
+				queue.offer(node.rightChild);
 		}
 	}
 }

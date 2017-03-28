@@ -1,56 +1,56 @@
 import java.util.Scanner;  
   
-//ÖÊÊıÓÖ³ÆËØÊı,ÊÇÖ¸ÔÚÒ»¸ö´óÓÚ1µÄ×ÔÈ»ÊıÖĞ£¬³ıÁË1ºÍ´ËÕûÊı×ÔÉíÍâ£¬²»ÄÜ±»ÆäËû×ÔÈ»ÊıÕû³ıµÄÊı  
+//è´¨æ•°åˆç§°ç´ æ•°,æ˜¯æŒ‡åœ¨ä¸€ä¸ªå¤§äº1çš„è‡ªç„¶æ•°ä¸­ï¼Œé™¤äº†1å’Œæ­¤æ•´æ•°è‡ªèº«å¤–ï¼Œä¸èƒ½è¢«å…¶ä»–è‡ªç„¶æ•°æ•´é™¤çš„æ•°  
 public class Main {  
   
     public static void main(String[] args) {  
   
-        Scanner scan = new Scanner(System.in);// É¨ÃèÆ÷£¬½ÓÊÕ¿ØÖÆÌ¨ÊäÈëĞÅÏ¢  
+        Scanner scan = new Scanner(System.in);// æ‰«æå™¨ï¼Œæ¥æ”¶æ§åˆ¶å°è¾“å…¥ä¿¡æ¯  
   
-       // System.out.print("ÇëÊäÈëÒ»¸öÕûÊı£º");  
+       // System.out.print("è¯·è¾“å…¥ä¸€ä¸ªæ•´æ•°ï¼š");  
 	    int n = scan.nextInt();
 		int num[] = new int[n];
 		
 		for(int i = 0;i < n;i++){
 			try {  
-				num[i] = scan.nextInt();// È¡³ö¿ØÖÆÌ¨ÊäÈëµÄĞÅÏ¢  
+				num[i] = scan.nextInt();// å–å‡ºæ§åˆ¶å°è¾“å…¥çš„ä¿¡æ¯  
 				
 			} catch (Exception e) {  
-				System.out.println("ÇëÊäÈëÕûÊı");// ²¶×½Òì³££¬ÈôÊäÈëµÄ²»ÊÇÕûÊı£¬Êä³öÒì³£  
+				System.out.println("è¯·è¾“å…¥æ•´æ•°");// æ•æ‰å¼‚å¸¸ï¼Œè‹¥è¾“å…¥çš„ä¸æ˜¯æ•´æ•°ï¼Œè¾“å‡ºå¼‚å¸¸  
 			}
 		} 
 		
 		for(int i = 0;i < n;i++){
-			if (isPrime(num[i])) {// µ÷ÓÃisPrime()·½·¨  
-					System.out.println("Yes");// ÈôisPrime()·½·¨·µ»Øtrue,Êä³öÊÇËØÊı  
+			if (isPrime(num[i])) {// è°ƒç”¨isPrime()æ–¹æ³•  
+					System.out.println("Yes");// è‹¥isPrime()æ–¹æ³•è¿”å›true,è¾“å‡ºæ˜¯ç´ æ•°  
 				} else {  
-					System.out.println("No");// ÈôisPrime()·½·¨·µ»Øfalse,Êä³ö²»ÊÇËØÊı  
+					System.out.println("No");// è‹¥isPrime()æ–¹æ³•è¿”å›false,è¾“å‡ºä¸æ˜¯ç´ æ•°  
 				}  
 		}
     }  
   
     /** 
      * <pre> 
-     * ÓÃÓÚÅĞ¶ÏÒ»¸öÊıÊÇ·ñÎªËØÊı£¬ÈôÎªËØÊı£¬·µ»Øtrue,·ñÔò·µ»Øfalse 
+     * ç”¨äºåˆ¤æ–­ä¸€ä¸ªæ•°æ˜¯å¦ä¸ºç´ æ•°ï¼Œè‹¥ä¸ºç´ æ•°ï¼Œè¿”å›true,å¦åˆ™è¿”å›false 
      * </pre> 
      *  
-     * @param a ÊäÈëµÄÖµ 
-     * @return true¡¢false 
+     * @param a è¾“å…¥çš„å€¼ 
+     * @return trueã€false 
      */  
     public static boolean isPrime(int a) {  
   
         boolean flag = true;  
   
-        if (a < 2) {// ËØÊı²»Ğ¡ÓÚ2  
+        if (a < 2) {// ç´ æ•°ä¸å°äº2  
             return false;  
         } else {  
   
             for (int i = 2; i <= Math.sqrt(a); i++) {  
   
-                if (a % i == 0) {// ÈôÄÜ±»Õû³ı£¬ÔòËµÃ÷²»ÊÇËØÊı£¬·µ»Øfalse  
+                if (a % i == 0) {// è‹¥èƒ½è¢«æ•´é™¤ï¼Œåˆ™è¯´æ˜ä¸æ˜¯ç´ æ•°ï¼Œè¿”å›false  
   
                     flag = false;  
-                    break;// Ìø³öÑ­»·  
+                    break;// è·³å‡ºå¾ªç¯  
                 }  
             }  
         }  
